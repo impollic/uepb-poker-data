@@ -21,7 +21,10 @@ const jsonData = {
     Lucas: [constants.currentValues.Lucas],
     Luiz: [constants.currentValues.Luiz],
     Cassiano: [constants.currentValues.Cassiano],
+    media: [],
 };
+
+const names = Object.keys(constants.currentValues);
 
 const content = await readFile(constants.dataPath, "utf-8");
 
@@ -35,6 +38,16 @@ function getLastValue(name) {
 
 function insertNewValue(name, value) {
     jsonData[name].push(value + getLastValue(name));
+}
+
+function calculateMedia() {
+    const sum = names.reduce((acc, name) => acc + getLastValue(name), 0);
+
+    return Math.round((sum / names.length) * 100) / 100;
+}
+
+function insertMedia() {
+    jsonData.media.push(calculateMedia());
 }
 
 function parseLine(line) {
@@ -53,6 +66,8 @@ function parseLine(line) {
     return parsedValues;
 }
 
+insertMedia();
+
 for (const line of lines) {
     if (!line.trim()) {
         continue;
@@ -60,11 +75,11 @@ for (const line of lines) {
 
     const processedLine = parseLine(line);
 
-    const names = Object.keys(jsonData);
-
     for (const [index, name] of names.entries()) {
         insertNewValue(name, processedLine[index]);
     }
+
+    insertMedia();
 }
 
 await writeFile(
