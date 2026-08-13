@@ -1,0 +1,276 @@
+{
+  "jogadores": [
+    "Apollo",
+    "Felipe",
+    "Lucas",
+    "Luiz",
+    "Cassiano",
+    "Wanderson"
+  ],
+  "valoresIniciais": {
+    "Apollo": 400,
+    "Felipe": 400,
+    "Lucas": 400,
+    "Luiz": 400,
+    "Cassiano": 400,
+    "Wanderson": 400
+  },
+  "jogos": [
+    {
+      "numero": 1,
+      "totalRodadas": 11,
+      "indiceInicial": 0,
+      "indiceFinal": 11
+    }
+  ],
+  "saldos": {
+    "Apollo": [
+      400,
+      530,
+      510,
+      440,
+      420,
+      375,
+      355,
+      355,
+      355,
+      355,
+      335,
+      535
+    ],
+    "Felipe": [
+      400,
+      355,
+      195,
+      175,
+      155,
+      145,
+      235,
+      235,
+      235,
+      235,
+      215,
+      165
+    ],
+    "Lucas": [
+      400,
+      385,
+      365,
+      345,
+      315,
+      270,
+      250,
+      250,
+      65,
+      65,
+      335,
+      315
+    ],
+    "Luiz": [
+      400,
+      375,
+      755,
+      735,
+      705,
+      1095,
+      1085,
+      1085,
+      1055,
+      1055,
+      945,
+      925
+    ],
+    "Cassiano": [
+      400,
+      400,
+      380,
+      520,
+      650,
+      505,
+      485,
+      485,
+      485,
+      485,
+      385,
+      285
+    ],
+    "Wanderson": [
+      400,
+      355,
+      195,
+      185,
+      155,
+      10,
+      -10,
+      -210,
+      5,
+      205,
+      185,
+      175
+    ]
+  },
+  "media": [
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    366.67,
+    366.67,
+    400,
+    400,
+    400
+  ],
+  "estatisticas": {
+    "porJogador": {
+      "Apollo": {
+        "media": 413.75,
+        "mediana": 387.5,
+        "minimo": 335,
+        "maximo": 535,
+        "amplitude": 200,
+        "desvioPadrao": 73.8,
+        "saldoFinal": 535,
+        "totalRodadas": 12
+      },
+      "Felipe": {
+        "media": 228.75,
+        "mediana": 225,
+        "minimo": 145,
+        "maximo": 400,
+        "amplitude": 255,
+        "desvioPadrao": 77.55,
+        "saldoFinal": 165,
+        "totalRodadas": 12
+      },
+      "Lucas": {
+        "media": 280,
+        "mediana": 315,
+        "minimo": 65,
+        "maximo": 400,
+        "amplitude": 335,
+        "desvioPadrao": 111.48,
+        "saldoFinal": 315,
+        "totalRodadas": 12
+      },
+      "Luiz": {
+        "media": 851.25,
+        "mediana": 935,
+        "minimo": 375,
+        "maximo": 1095,
+        "amplitude": 720,
+        "desvioPadrao": 259.47,
+        "saldoFinal": 925,
+        "totalRodadas": 12
+      },
+      "Cassiano": {
+        "media": 455.42,
+        "mediana": 485,
+        "minimo": 285,
+        "maximo": 650,
+        "amplitude": 365,
+        "desvioPadrao": 92.35,
+        "saldoFinal": 285,
+        "totalRodadas": 12
+      },
+      "Wanderson": {
+        "media": 137.5,
+        "mediana": 180,
+        "minimo": -210,
+        "maximo": 400,
+        "amplitude": 610,
+        "desvioPadrao": 166.96,
+        "saldoFinal": 175,
+        "totalRodadas": 12
+      }
+    },
+    "geral": {
+      "mediaAtual": 400,
+      "mediaHistorica": 394.44,
+      "valorMinimo": -210,
+      "valorMaximo": 1095,
+      "amplitudeTotal": 1305,
+      "desvioPadrao": 271.56
+    }
+  },
+  "emprestimos": {
+    "porJogador": {
+      "Apollo": {
+        "totalTomados": 0,
+        "totalPagos": 0,
+        "totalEmAberto": 0,
+        "historico": {
+          "tomados": [],
+          "pagos": []
+        }
+      },
+      "Felipe": {
+        "totalTomados": 0,
+        "totalPagos": 0,
+        "totalEmAberto": 0,
+        "historico": {
+          "tomados": [],
+          "pagos": []
+        }
+      },
+      "Lucas": {
+        "totalTomados": 0,
+        "totalPagos": 0,
+        "totalEmAberto": 0,
+        "historico": {
+          "tomados": [],
+          "pagos": []
+        }
+      },
+      "Luiz": {
+        "totalTomados": 0,
+        "totalPagos": 0,
+        "totalEmAberto": 0,
+        "historico": {
+          "tomados": [],
+          "pagos": []
+        }
+      },
+      "Cassiano": {
+        "totalTomados": 0,
+        "totalPagos": 0,
+        "totalEmAberto": 0,
+        "historico": {
+          "tomados": [],
+          "pagos": []
+        }
+      },
+      "Wanderson": {
+        "totalTomados": 1,
+        "totalPagos": 1,
+        "totalEmAberto": 0,
+        "historico": {
+          "tomados": [
+            {
+              "valor": 200,
+              "jogo": 1,
+              "rodada": 7
+            }
+          ],
+          "pagos": [
+            {
+              "valor": 200,
+              "jogo": 1,
+              "rodada": 9,
+              "tomadoNoJogo": 1,
+              "tomadoNaRodada": 7
+            }
+          ]
+        }
+      }
+    },
+    "geral": {
+      "totalTomados": 1,
+      "totalPagos": 1,
+      "totalEmAberto": 0
+    }
+  },
+  "avisos": []
+}
